@@ -98,47 +98,84 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-          <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-                <source src="images/nuvo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nuvo.jpg' width=100%>
+          <tr onmouseout="cganrc_stop()" onmouseover="cganrc_start()">
+            <td align="center" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px; width:30%; height:30%; vertical-align:middle">
+              <div class="one" style="width: 100%; max-height: 100%;opacity: 1;">
+                <img id='cganrc_image' src='images/cganrc.jpg' height="100%">
               </div>
               <script type="text/javascript">
-                function nuvo_start() {
-                  document.getElementById('nuvo_image').style.opacity = "1";
+                function cganrc_start() {
+                  document.getElementById('cganrc_image').src = "images/cganrc.gif";
+                  console.log("start")
                 }
 
-                function nuvo_stop() {
-                  document.getElementById('nuvo_image').style.opacity = "0";
+                function cganrc_stop() {
+                  document.getElementById('cganrc_image').src = "images/cganrc.jpg";
                 }
-                nuvo_stop()
+                cganrc_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://pratulsrinivasan.github.io/nuvo/">
-                <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
-              </a>
+              <div>
+                <span class="papertitle">Development of a high-fidelity failure prediction system for reinforced concrete bridge columns using generative adversarial networks</span>
+              </div>
               <br>
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-              <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-          <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>
+              <strong>Ting-Yan Wu</strong>,
+              <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
+              <a href="https://scholar.google.com.tw/citations?user=vDyT748AAAAJ&hl=zh-TW&oi=sra">Ping-Hsiung Wang</a>,
+              <a href="https://scholar.google.com.tw/citations?user=uMgCC3wAAAAJ&hl=zh-TW&oi=sra">Tzu-Kang Lin</a>,
+              <a href="https://scholar.google.com.tw/citations?user=7mWpQB0AAAAJ&hl=zh-TW&oi=sra">Kuo-Chun Chang</a>
               <br>
-              <em>ECCV</em>, 2024
+              <em>Engineering Structures</em>, 2023
               <br>
-              <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+              <a href="https://github.com/tingyan08/DamageIndex-CGAN">Code</a>
               /
-              <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
-              /
-              <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S0141029623005448">Paper</a>
               <p></p>
               <p>
-              Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+              Conditional Generative Adversarial Network (CGAN)-base network is proposed to predict the failure of reinforced concrete bridge columns.
+              The proposed cGANRC is able to forecast the surface damage patterns of the bridge columns according to given Aspect Ratio (AR), Longitudinal Reinforced Ratio (LR), Transverse Reinforced Ratio (TR)  and damage index (DI). 
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="da_stop()" onmouseover="da_start()">
+            <td align="center" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px; width:30%; height:30%; vertical-align:middle">
+              <div class="one" style="width: 100%; max-height: 100%;opacity: 1;">
+                <img id='da_image' src='images/da_before.jpg' width="100%">
+              </div>
+              <script type="text/javascript">
+                function da_start() {
+                  element = document.getElementById('da_image')
+                  element.src = "images/da_after.jpg"
+                  element.style.width = "75%"
+                }
+
+                function da_stop() {
+                  element = document.getElementById('da_image')
+                  element.src = "images/da_before.jpg"
+                  element.style.width = "100%"
+                }
+                cganrc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div>
+                <span class="papertitle">Building Manufacturing Deep Learning Models with Minimal and Imbalanced Training Data Using Domain Adaptation and Data Augmentation</span>
+              </div>
+              <br>
+              <a href="https://scholar.google.com.tw/citations?user=RxdytskAAAAJ&hl=zh-TW&oi=sra">Adrian Shuai Li</a>,
+              <a href="https://scholar.google.com.tw/citations?user=EfuT9RoAAAAJ&hl=zh-TW&oi=sra">Elisa Bertino</a>,
+              <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
+              <strong>Ting-Yan Wu</strong>,
+              <br>
+              <em>IEEE International Conference on Industrial Technology (ICIT)</em>, 2023
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10143099">Paper</a>
+              <p></p>
+              <p>
+                In this paper, we propose a novel domain adaptation (DA) approach to address the problem of labeled training data scarcity for a target learning task by transferring knowledge gained from an existing source dataset used for a similar learning task.
+                Our approach works for scenarios where the source dataset and the dataset available for the target learning task have same or different feature spaces.
               </p>
             </td>
           </tr>
