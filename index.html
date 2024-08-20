@@ -14,22 +14,27 @@
     
   </head>
 
-  <body style="display:flex; flex-direction: column;">
-    <div class="intro">
-      <div class="intro_content">
-        <p class="name" style="text-align:center">
-          Ting-Yan Wu 吳亭諺
-        </p>
-        <p>
-          I'm a research assistant in 
-          <a href="https://marcelab.caece.net/">Marce Lab</a> 
-          at National Taiwan University in the 
-          <a href="https://www.ce.ntu.edu.tw/">Department of Civil Engineering</a>.
-          Earlier, I received my MS in Computer-Aided Engineering Division, Civil Engineering from NTU advised by Dr. 
-          <a href="https://marcelab.caece.net/people.html">Rih-Teng Wu</a>.
-          <p>
-            My research focuses on computer vision, deep learning, generative AI, structural health monitoring, and strcutral engineerning. 
+  <body style="display:flex; flex-direction: column; align-items: center">
+    <div class="main_area">
+      <div class="intro">
+        <div class="intro_content">
+          <p class="name" style="text-align:center">
+            <b>Ting-Yan Wu 吳亭諺</b>
           </p>
+          <div style="display: inline; width:100%">
+            <p>
+              I'm a research assistant in 
+              <a href="https://marcelab.caece.net/">Marce Lab</a> 
+              at National Taiwan University in the 
+              <a href="https://www.ce.ntu.edu.tw/">Department of Civil Engineering</a>.
+              Earlier, I received my MS in Computer-Aided Engineering Division, Civil Engineering from NTU advised by Prof. 
+              <a href="https://marcelab.caece.net/people.html">Rih-Teng Wu</a>.
+            </p>
+            <p>
+              My research focuses on computer vision, deep learning, generative AI, structural health monitoring, and strcutral engineering. 
+            </p>
+          </div>
+          
           <table class="btn_area"><tbody>
             <tr>
               <th style="width:20%">
@@ -49,317 +54,208 @@
               </th>
             </tr>
             <tr>
-              <td style="text-align: center;font-size: 10px">
+              <td style="text-align: center">
                 Email
               </td>
-              <td style="text-align: center;font-size: 10px;">
+              <td style="text-align: center">
                 X
               </td>
-              <td style="text-align: center;font-size: 10px;">
+              <td style="text-align: center">
                 LinkedIn
               </td>
-              <td style="text-align: center;font-size: 10px;">
+              <td style="text-align: center">
                 Github
               </td>
-              <td style="text-align: center;font-size: 10px;">
+              <td style="text-align: center">
                 Scholar
               </td>
             </tr>
           </tbody></table>
+        </div>
+
+        <div class="intro_images">
+          <a href="images/Tingyan.jpg" style="display: flex; justify-content: center; align-items: center;">
+            <img class="profile_image" alt="profile photo" src="images/Tingyan.jpg">
+          </a>
+        </div>
+      </div>
+      <div class="topic">
+        <h2><b>Research</b></h2>
       </div>
 
-      <div class="intro_images">
-        <a href="images/Tingyan.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Tingyan.jpg" class="hoverZoomLink"></a>
-      </div>
-    </div>
+      <div class="research_area">
+        <div class="publication" onmouseout="cganrc_stop()" onmouseover="cganrc_start()">
+          <div class="publication_img">
+            <img id='cganrc_image' src='images/cganrc.jpg' style="height: 100%;" >
+          </div>
+          <script type="text/javascript">
+            function cganrc_start() {
+              document.getElementById('cganrc_image').src = "images/cganrc.gif";
+              console.log("start")
+            }
+  
+            function cganrc_stop() {
+              document.getElementById('cganrc_image').src = "images/cganrc.jpg";
+            }
+            cganrc_stop()
+          </script>
+          <div class="publication_content">
+            <div>
+              <span class="papertitle">Development of a high-fidelity failure prediction system for reinforced concrete bridge columns using generative adversarial networks</span>
+            </div>
+            <br>
+            <strong>Ting-Yan Wu</strong>,
+            <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
+            <a href="https://scholar.google.com.tw/citations?user=vDyT748AAAAJ&hl=zh-TW&oi=sra">Ping-Hsiung Wang</a>,
+            <a href="https://scholar.google.com.tw/citations?user=uMgCC3wAAAAJ&hl=zh-TW&oi=sra">Tzu-Kang Lin</a>,
+            <a href="https://scholar.google.com.tw/citations?user=7mWpQB0AAAAJ&hl=zh-TW&oi=sra">Kuo-Chun Chang</a>
+            <br>
+            <em>Engineering Structures</em>, 2023
+            <br>
+            <a href="https://github.com/tingyan08/DamageIndex-CGAN">Code</a>
+            /
+            <a href="https://www.sciencedirect.com/science/article/pii/S0141029623005448">Paper</a>
+            <p></p>
+            <p style="font-size: 0.8rem;">
+              Conditional Generative Adversarial Network (CGAN)-base network is proposed to predict the failure of reinforced concrete bridge columns.
+              The proposed cGANRC is able to forecast the surface damage patterns of the bridge columns according to given Aspect Ratio (AR), Longitudinal Reinforced Ratio (LR), Transverse Reinforced Ratio (TR)  and damage index (DI). 
+            </p>
+          </div>
+        </div>
+        <div class="publication" onmouseout="da_stop()" onmouseover="da_start()">
+          <div class="publication_img">
+            <img id='da_image' src='images/da_before.jpg' style="height: 100%; max-width: 100%;">
+          </div>
+          <script type="text/javascript">
+            function da_start() {
+              element = document.getElementById('da_image')
+              element.src = "images/da_after.jpg"
+            }
 
-    <div>
-      <h2>Research</h2>
+            function da_stop() {
+              element = document.getElementById('da_image')
+              element.src = "images/da_before.jpg"
+            }
+            da_stop()
+          </script>
+          <div class="publication_content">
+            <div>
+              <span class="papertitle">Building Manufacturing Deep Learning Models with Minimal and Imbalanced Training Data Using Domain Adaptation and Data Augmentation</span>
+            </div>
+            <br>
+            <a href="https://scholar.google.com.tw/citations?user=RxdytskAAAAJ&hl=zh-TW&oi=sra">Adrian Shuai Li</a>,
+            <a href="https://scholar.google.com.tw/citations?user=EfuT9RoAAAAJ&hl=zh-TW&oi=sra">Elisa Bertino</a>,
+            <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
+            <strong>Ting-Yan Wu</strong>,
+            <br>
+            <em>IEEE International Conference on Industrial Technology (ICIT)</em>, 2023
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10143099">Paper</a>
+            <p></p>
+            <p style="font-size: 0.8rem;">
+              In this paper, we propose a novel domain adaptation (DA) approach to address the problem of labeled training data scarcity for a target learning task by transferring knowledge gained from an existing source dataset used for a similar learning task.
+              Our approach works for scenarios where the source dataset and the dataset available for the target learning task have same or different feature spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2><b>Education</b></h2>
+      </div>
+
+      <div class="education_area">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0;width:85%;vertical-align:middle">
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Master of Science in Computer-Aided Engineering, National Taiwan University, Taiwan</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:15%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2022/09-2024/06</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Bachelor of Science in Civil Engineering, National Taiwan University, Taiwan</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:15%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2018/09-2022/06</div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+
+
+
+      <div class="topic">
+        <h2><b>Honors & Awards</b></h2>
+      </div>
+
+      <div class="honor_area">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0;width:95%;vertical-align:middle">
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Second Place for Group A : Visual Question Answering via Large MultiModal Model (LMMs), 2024 TSMC IT CareerHack.</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:5%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2024/02</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">First Place for Project 1, 3rd International Competition for Structural Health Monitoring.</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:5%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2024/01</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Second Place for Project 2, 3rd International Competition for Structural Health Monitoring.</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:5%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2024/01</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Honorable Mention for Project 1, 2nd International Competition for Structural Health Monitoring.</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:5%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2022/06</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li style="font-size: 1rem;padding-bottom: 5px;">Second Place for Project 3, 2nd International Competition for Structural Health Monitoring.</li>
+              </ul>
+            </td>
+            <td style="padding:0;width:5%;text-align: right;">
+              <div style="font-size: 1rem;padding-bottom: 5px;">2022/06</div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+
+
+      <footer>
+        <p style="text-align:center">
+          The website design is based on <a href="https://github.com/jonbarron/website">Jonathan Barron's</a> website.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
-      <!-- <tr style="padding:0px">
-        <td style="padding:0px">
-          <table class="intro"><tbody>
-            <tr style="padding:0px">
-              <td class="intro_content">
-                <p class="name" style="text-align:center">
-                  Ting-Yan Wu 吳亭諺
-                </p>
-                <p>
-                  I'm a research assistant in 
-                  <a href="https://marcelab.caece.net/">Marce Lab</a> 
-                  at National Taiwan University in the 
-                  <a href="https://www.ce.ntu.edu.tw/">Department of Civil Engineering</a>.
-                  Earlier, I received my MS in Computer-Aided Engineering Division, Civil Engineering from NTU advised by Dr. 
-                  <a href="https://marcelab.caece.net/people.html">Rih-Teng Wu</a>.
-                </p>
-
-                <p>
-                  My research focuses on computer vision, deep learning, generative AI, structural health monitoring, and strcutral engineerning. 
-                </p>
-                
-                <table class="btn_area"><tbody>
-                  <tr>
-                    <th style="width:20%">
-                      <a class="btn btn-outline-primary mr-2" href="mailto:tingyan@caece.net"><i class="fa-solid fa-envelope"></i></a>
-                    </th>
-                    <th style="width:20%">
-                      <a class="btn btn-outline-primary mr-2" href="https://x.com/tingyan08"><i class="fa-brands fa-x-twitter"></i></a>
-                    </th>
-                    <th style="width:20%">
-                      <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/ting-yan-wu-32a1b91b8/"><i class="fa-brands fa-linkedin"></i></a>
-                    </th>
-                    <th style="width:20%">
-                      <a class="btn btn-outline-primary mr-2" href="https://github.com/tingyan08"><i class="fa-brands fa-github"></i></a>
-                    </th>
-                    <th style="width:20%">
-                      <a class="btn btn-outline-primary mr-2" href="https://scholar.google.com.tw/citations?user=t8dhlSQAAAAJ&hl=zh-TW&oi=ao"><i class="fa-brands fa-google-scholar"></i></a>
-                    </th>
-                  </tr>
-                  <tr>
-                    <td style="text-align: center;font-size: 10px">
-                      Email
-                    </td>
-                    <td style="text-align: center;font-size: 10px;">
-                      X
-                    </td>
-                    <td style="text-align: center;font-size: 10px;">
-                      LinkedIn
-                    </td>
-                    <td style="text-align: center;font-size: 10px;">
-                      Github
-                    </td>
-                  column;tyle="text-align: center;font-size: 10px;">
-                      Scholar
-                    </td>
-                  </tr>
-                </tbody></table>
-
-
-
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/Tingyan.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Tingyan.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </div> -->
-
-          
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2><b>Research</b></h2>
-                </td>
-              </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-          <tr onmouseout="cganrc_stop()" onmouseover="cganrc_start()">
-            <td align="center" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px; width:30%; height:30%; vertical-align:middle">
-              <div class="one" style="width: 100%; max-height: 100%;opacity: 1;">
-                <img id='cganrc_image' src='images/cganrc.jpg' height="100%">
-              </div>
-              <script type="text/javascript">
-                function cganrc_start() {
-                  document.getElementById('cganrc_image').src = "images/cganrc.gif";
-                  console.log("start")
-                }
-
-                function cganrc_stop() {
-                  document.getElementById('cganrc_image').src = "images/cganrc.jpg";
-                }
-                cganrc_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <div>
-                <span class="papertitle">Development of a high-fidelity failure prediction system for reinforced concrete bridge columns using generative adversarial networks</span>
-              </div>
-              <br>
-              <strong>Ting-Yan Wu</strong>,
-              <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
-              <a href="https://scholar.google.com.tw/citations?user=vDyT748AAAAJ&hl=zh-TW&oi=sra">Ping-Hsiung Wang</a>,
-              <a href="https://scholar.google.com.tw/citations?user=uMgCC3wAAAAJ&hl=zh-TW&oi=sra">Tzu-Kang Lin</a>,
-              <a href="https://scholar.google.com.tw/citations?user=7mWpQB0AAAAJ&hl=zh-TW&oi=sra">Kuo-Chun Chang</a>
-              <br>
-              <em>Engineering Structures</em>, 2023
-              <br>
-              <a href="https://github.com/tingyan08/DamageIndex-CGAN">Code</a>
-              /
-              <a href="https://www.sciencedirect.com/science/article/pii/S0141029623005448">Paper</a>
-              <p></p>
-              <p>
-              Conditional Generative Adversarial Network (CGAN)-base network is proposed to predict the failure of reinforced concrete bridge columns.
-              The proposed cGANRC is able to forecast the surface damage patterns of the bridge columns according to given Aspect Ratio (AR), Longitudinal Reinforced Ratio (LR), Transverse Reinforced Ratio (TR)  and damage index (DI). 
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="da_stop()" onmouseover="da_start()">
-            <td align="center" style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px; width:30%; height:30%; vertical-align:middle">
-              <div class="one" style="width: 100%; max-height: 100%;opacity: 1;">
-                <img id='da_image' src='images/da_before.jpg' width="100%">
-              </div>
-              <script type="text/javascript">
-                function da_start() {
-                  element = document.getElementById('da_image')
-                  element.src = "images/da_after.jpg"
-                  element.style.width = "75%"
-                }
-
-                function da_stop() {
-                  element = document.getElementById('da_image')
-                  element.src = "images/da_before.jpg"
-                  element.style.width = "100%"
-                }
-                cganrc_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <div>
-                <span class="papertitle">Building Manufacturing Deep Learning Models with Minimal and Imbalanced Training Data Using Domain Adaptation and Data Augmentation</span>
-              </div>
-              <br>
-              <a href="https://scholar.google.com.tw/citations?user=RxdytskAAAAJ&hl=zh-TW&oi=sra">Adrian Shuai Li</a>,
-              <a href="https://scholar.google.com.tw/citations?user=EfuT9RoAAAAJ&hl=zh-TW&oi=sra">Elisa Bertino</a>,
-              <a href="https://scholar.google.com.tw/citations?user=jkEbHUEAAAAJ&hl=zh-TW&oi=sra">Rih-Teng Wu</a>,
-              <strong>Ting-Yan Wu</strong>,
-              <br>
-              <em>IEEE International Conference on Industrial Technology (ICIT)</em>, 2023
-              <br>
-              <a href="https://ieeexplore.ieee.org/abstract/document/10143099">Paper</a>
-              <p></p>
-              <p>
-                In this paper, we propose a novel domain adaptation (DA) approach to address the problem of labeled training data scarcity for a target learning task by transferring knowledge gained from an existing source dataset used for a similar learning task.
-                Our approach works for scenarios where the source dataset and the dataset available for the target learning task have same or different feature spaces.
-              </p>
-            </td>
-          </tr> -->
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2><b>Education</b></h2>
-              </td>
-            </tr>
-            <tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0;width:85%;vertical-align:middle">
-                <ul>
-                  <li style="font-size: 16px;padding-bottom: 5px;">Master of Science in Computer-Aided Engineering, National Taiwan University, Taiwan</li>
-                </ul>
-              </td>
-              <td style="padding:0;width:15%;text-align: right;">
-                <div style="font-size: 14px;padding-bottom: 5px;">2022/09-2024/06</div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <ul>
-                  <li style="font-size: 16px;padding-bottom: 5px;">Bachelor of Science in Civil Engineering, National Taiwan University, Taiwan</li>
-                </ul>
-              </td>
-              <td style="padding:0;width:15%;text-align: right;">
-                <div style="font-size: 14px;padding-bottom: 5px;">2018/09-2022/06</div>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2><b>Honors & Awards</b></h2>
-                </td>
-              </tr>
-              <tr>
-            </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:0;width:95%;vertical-align:middle">
-                  <ul>
-                    <li style="font-size: 16px;padding-bottom: 5px;">Second Place for Group A : Visual Question Answering via Large MultiModal Model (LMMs), 2024 TSMC IT CareerHack.</li>
-                  </ul>
-                </td>
-                <td style="padding:0;width:5%;text-align: right;">
-                  <div style="font-size: 14px;padding-bottom: 5px;">2024/02</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li style="font-size: 16px;padding-bottom: 5px;">First Place for Project 1, 3rd International Competition for Structural Health Monitoring.</li>
-                  </ul>
-                </td>
-                <td style="padding:0;width:5%;text-align: right;">
-                  <div style="font-size: 14px;padding-bottom: 5px;">2024/01</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li style="font-size: 16px;padding-bottom: 5px;">Second Place for Project 2, 3rd International Competition for Structural Health Monitoring.</li>
-                  </ul>
-                </td>
-                <td style="padding:0;width:5%;text-align: right;">
-                  <div style="font-size: 14px;padding-bottom: 5px;">2024/01</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li style="font-size: 16px;padding-bottom: 5px;">Honorable Mention for Project 1, 2nd International Competition for Structural Health Monitoring.</li>
-                  </ul>
-                </td>
-                <td style="padding:0;width:5%;text-align: right;">
-                  <div style="font-size: 14px;padding-bottom: 5px;">2022/06</div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li style="font-size: 16px;padding-bottom: 5px;">Second Place for Project 3, 2nd International Competition for Structural Health Monitoring.</li>
-                  </ul>
-                </td>
-                <td style="padding:0;width:5%;text-align: right;">
-                  <div style="font-size: 14px;padding-bottom: 5px;">2022/06</div>
-                </td>
-              </tr>
-            </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color: #d6dceeb7"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  The website design is based on <a href="https://github.com/jonbarron/website">Jonathan Barron's</a> website.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-
-        </td>
-      </tr>
-    </table> -->
-
